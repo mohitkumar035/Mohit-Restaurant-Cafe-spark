@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohit Restaurant &amp; Cafe | Gourmet Dining &amp; Artisanal Roasts</title>
+  <meta name="description" content="Mohit Restaurant &amp; Cafe - A premier fine dining and artisanal cafe experience featuring gourmet culinary mastery, handcrafted roasts, and an extraordinary ambient setting.">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohit Restaurant &amp; Cafe | Luxury Dining &amp; Cafe Experience">
+  <meta property="og:description" content="Savor gourmet cuisine, hand-poured artisanal coffees, and wood-fired delicacies in a soulful, candlelit atmosphere. Reserve your table today.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+
+  <!-- Strictly Relative CSS Link as Mandated -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       STICKY GLASSMORPHISM NAVBAR
+       ========================================================================== -->
+  <header id="site-header" class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" id="brand-logo-link" aria-label="Mohit Restaurant and Cafe Home">
+        <div class="brand-icon-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">MOHIT</span>
+          <span class="brand-tagline">Restaurant &amp; Cafe</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Status badge + CTA) -->
+      <div class="nav-actions">
+        <div class="status-badge-nav status-indicator-live">
+          <span class="status-dot"></span>
+          <span>Open Now • Closes 11:30 PM</span>
+        </div>
+        <a href="#reservation" class="btn btn-gold btn-sm" id="nav-book-btn">
+          <span>Book a Table</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="brand-logo" style="margin-bottom: 2rem;">
+      <div class="brand-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          <line x1="6" y1="1" x2="6" y2="4"></line>
+          <line x1="10" y1="1" x2="10" y2="4"></line>
+          <line x1="14" y1="1" x2="14" y2="4"></line>
+        </svg>
+      </div>
+      <div class="brand-text-wrap">
+        <span class="brand-title">MOHIT</span>
+        <span class="brand-tagline">Restaurant &amp; Cafe</span>
+      </div>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">Our Story &amp; Philosophy</a></li>
+      <li><a href="#menu" class="mobile-nav-link">Culinary Menu</a></li>
+      <li><a href="#gallery" class="mobile-nav-link">Ambiance Gallery</a></li>
+      <li><a href="#reservation" class="mobile-nav-link">Reserve a Table</a></li>
+      <li><a href="#reviews" class="mobile-nav-link">Guest Testimonials</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact &amp; Location</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="https://wa.me/919876543210?text=Hi%20Mohit%20Restaurant%20%26%20Cafe,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp w-full mobile-drawer-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>Instant WhatsApp Table Booking</span>
+      </a>
+      <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+        📞 Call directly: <a href="tel:+919876543210" style="color: var(--gold-light);">+91 98765 43210</a>
+      </p>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-overlay-grain"></div>
+
+    <div class="container hero-content reveal">
+      <div class="hero-badge">
+        <span class="star-icon">★</span>
+        <span>Welcome to Mohit Restaurant &amp; Cafe</span>
+        <span class="star-icon">★</span>
+      </div>
+
+      <h1 class="hero-title">
+        Where Culinary Mastery Meets <span class="gold-gradient-text">Soulful Ambiance</span>
+      </h1>
+
+      <p class="hero-description">
+        Indulge in a curated symphony of authentic Indian gourmet delicacies, wood-fired continental favorites, and single-origin handcrafted coffees served in an atmosphere of warmth and understated luxury.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#menu" class="btn btn-gold" id="hero-view-menu-btn">
+          <span>Explore Our Menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/919876543210?text=Hi%20Mohit%20Restaurant%20%26%20Cafe,%20I%20would%20like%20to%20book%20a%20table%20today." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="hero-whatsapp-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Book a Table via WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Quick Stats Ribbon -->
+      <div class="hero-stats-ribbon">
+        <div class="stat-item">
+          <div class="stat-number">4.9 ★</div>
+          <div class="stat-label">1,850+ Happy Diners</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Fresh Organic Ingredients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">28+</div>
+          <div class="stat-label">Artisan Roasts &amp; Brews</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8 Yrs</div>
+          <div class="stat-label">Culinary Heritage</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-visual reveal">
+          <img 
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" 
+            alt="Interior dining ambiance at Mohit Restaurant and Cafe" 
+            class="about-img-main"
+            loading="lazy"
+          >
+          <div class="about-img-badge">
+            <div class="badge-icon">☕</div>
+            <div class="badge-text">
+              <span class="badge-bold">Artisanal Haven</span>
+              Freshly roasted beans &amp; slow-cooked heritage recipes
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Story Column -->
+        <div class="about-content reveal">
+          <span class="section-tag">Our Heritage &amp; Passion</span>
+          <h2 class="about-title">Crafting Memorable Gatherings &amp; Pure Flavor Since 2018</h2>
+          
+          <p class="about-lead">
+            Mohit Restaurant &amp; Cafe was founded with an unyielding conviction: that dining out is not merely about sustenance, but a sacred pause in the day for celebration, connection, and culinary delight.
+          </p>
+          
+          <p class="about-p">
+            Nestled in the heart of the city, our space seamlessly marries the warm rustic charm of a European coffee roastery with the grandeur and rich aromatics of traditional gourmet dining. Every recipe has been tested, refined, and passed through generations of master culinary artistry.
+          </p>
+
+          <div class="founder-quote">
+            <p>"We pour our soul into every slow-brewed espresso cup and each fragrant earthen handi dish that leaves our kitchen."</p>
+            <span>— Mohit &amp; Culinary Team</span>
+          </div>
+
+          <!-- Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Farm-Fresh Sourcing</h4>
+                <p>Locally harvested herbs, organic dairy, and hand-picked microgreens.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Soulful Ambiance</h4>
+                <p>Warm ambient lighting, curated acoustics, and cozy lounge nooks.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#reservation" class="btn btn-outline-gold">
+            <span>Experience Our Hospitality</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES & MENU SECTION
+       ========================================================================== -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Handcrafted Gastronomy</span>
+        <h2 class="section-title">Explore Our Signature Menu</h2>
+        <p class="section-subtitle">
+          From mouth-watering starters to royal clay-pot gravies, wood-fired artisanal pizzas, and barista coffee creations.
+        </p>
+      </div>
+
+      <!-- Menu Category Tabs -->
+      <div class="menu-tabs-wrapper reveal">
+        <button class="menu-tab-btn active" data-filter="all">All Specialties</button>
+        <button class="menu-tab-btn" data-filter="starters">Starters &amp; Small Plates</button>
+        <button class="menu-tab-btn" data-filter="mains">Gourmet Mains</button>
+        <button class="menu-tab-btn" data-filter="pizzas">Wood-Fired &amp; Burgers</button>
+        <button class="menu-tab-btn" data-filter="beverages">Artisan Cafe &amp; Drinks</button>
+        <button class="menu-tab-btn" data-filter="desserts">Decadent Desserts</button>
+      </div>
+
+      <!-- Menu Cards Grid -->
+      <div class="menu-grid" id="menu-grid">
+        
+        <!-- Item 1: Starters -->
+        <article class="menu-card reveal" data-category="starters">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=800&q=80" 
+              alt="Truffle Garlic Bruschetta" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-special">⭐ Chef's Special</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Truffle Garlic Bruschetta</h3>
+              <span class="menu-card-price">₹340</span>
+            </div>
+            <p class="menu-card-desc">
+              Charred sourdough rubbed with roasted garlic, heirloom cherry tomatoes, cold-pressed olive oil, and infused white truffle drizzle.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">🌱 Pure Veg • Signature</span>
+              <button class="dish-order-btn" data-dish="Truffle Garlic Bruschetta" data-price="₹340">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2: Starters -->
+        <article class="menu-card reveal" data-category="starters">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80" 
+              alt="Paneer Tikka Angaar" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-veg">🌱 Pure Veg</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Paneer Tikka Angaar</h3>
+              <span class="menu-card-price">₹390</span>
+            </div>
+            <p class="menu-card-desc">
+              Succulent cubes of cottage cheese marinated in Kashmiri deghi mirch, smoked tandoori spices, bell peppers, and mint chutney.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">🌱 Clay Oven • Smoky</span>
+              <button class="dish-order-btn" data-dish="Paneer Tikka Angaar" data-price="₹390">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3: Starters -->
+        <article class="menu-card reveal" data-category="starters">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80" 
+              alt="Crispy Herb Calamari &amp; Shrimp" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-non-veg">🍗 Non-Veg</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Crispy Herb Calamari</h3>
+              <span class="menu-card-price">₹460</span>
+            </div>
+            <p class="menu-card-desc">
+              Flash-fried golden squid tossed in cracked black peppercorn, kaffir lime zest, and served with house garlic herb aioli.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">🍗 Seafood • Crispy</span>
+              <button class="dish-order-btn" data-dish="Crispy Herb Calamari" data-price="₹460">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4: Mains -->
+        <article class="menu-card reveal" data-category="mains">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80" 
+              alt="Dal Makhani Royale" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-special">⭐ Bestseller</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Dal Makhani Royale</h3>
+              <span class="menu-card-price">₹420</span>
+            </div>
+            <p class="menu-card-desc">
+              Black lentils slow-simmered for 24 hours over charcoal with churned white butter, rich tomato reduction, and aromatic fenugreek.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">🌱 Heritage • Velvety</span>
+              <button class="dish-order-btn" data-dish="Dal Makhani Royale" data-price="₹420">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 5: Mains -->
+        <article class="menu-card reveal" data-category="mains">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80" 
+              alt="Old Delhi Butter Chicken" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-non-veg">🍗 Non-Veg</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Old Delhi Butter Chicken</h3>
+              <span class="menu-card-price">₹540</span>
+            </div>
+            <p class="menu-card-desc">
+              Tender boneless chicken roasted in clay tandoor, folded into an opulent silk-smooth satin gravy of tomatoes, cashew butter, and kasuri methi.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">🍗 Royal Mughlai • Chef Signature</span>
+              <button class="dish-order-btn" data-dish="Old Delhi Butter Chicken" data-price="₹540">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 6: Mains -->
+        <article class="menu-card reveal" data-category="mains">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" 
+              alt="Grilled Norwegian Salmon" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-special">⭐ Continental</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Grilled Salmon Fillet</h3>
+              <span class="menu-card-price">₹790</span>
+            </div>
+            <p class="menu-card-desc">
+              Pan-seared Atlantic salmon resting on lemon-dill mashed potatoes, asparagus spears, and finished with a citrus caper emulsion.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">🍗 Fresh Catch • Gourmet</span>
+              <button class="dish-order-btn" data-dish="Grilled Salmon Fillet" data-price="₹790">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 7: Wood-Fired -->
+        <article class="menu-card reveal" data-category="pizzas">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" 
+              alt="Wood-Fired Margherita Basil" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-veg">🌱 Pure Veg</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Artisan Margherita Pizza</h3>
+              <span class="menu-card-price">₹480</span>
+            </div>
+            <p class="menu-card-desc">
+              Fermented 48-hour sourdough base, San Marzano tomato sauce, fresh buffalo fior di latte mozzarella, garden basil, and EVOO.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">🌱 450°C Oven • Authentic</span>
+              <button class="dish-order-btn" data-dish="Artisan Margherita Pizza" data-price="₹480">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 8: Wood-Fired -->
+        <article class="menu-card reveal" data-category="pizzas">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" 
+              alt="Mohit Signature Truffle Burger" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-special">⭐ Signature</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Mohit Signature Truffle Burger</h3>
+              <span class="menu-card-price">₹440</span>
+            </div>
+            <p class="menu-card-desc">
+              Smoked patty with aged English cheddar, caramelized port onions, truffle aioli on toasted brioche with rosemary fries.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">⭐ Brioche • Gourmet</span>
+              <button class="dish-order-btn" data-dish="Mohit Signature Truffle Burger" data-price="₹440">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 9: Beverages -->
+        <article class="menu-card reveal" data-category="beverages">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" 
+              alt="Artisanal Hazelnut Cappuccino" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-cafe">☕ Artisanal Cafe</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Hazelnut Silk Cappuccino</h3>
+              <span class="menu-card-price">₹220</span>
+            </div>
+            <p class="menu-card-desc">
+              Double shot of single-origin Chikmagalur Arabica espresso, steamed velvety milk, roasted hazelnut infusion, and barista latte art.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">☕ Single-Origin • Fresh Brew</span>
+              <button class="dish-order-btn" data-dish="Hazelnut Silk Cappuccino" data-price="₹220">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 10: Beverages -->
+        <article class="menu-card reveal" data-category="beverages">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" 
+              alt="Passionfruit Berry Mojito" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-cafe">🍹 Mocktails</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Passionfruit Berry Mojito</h3>
+              <span class="menu-card-price">₹260</span>
+            </div>
+            <p class="menu-card-desc">
+              Crushed garden mint, fresh lime muddle, passionfruit puree, wild berries, and sparkling carbonation over cracked ice.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">🍹 Refreshing • Chilled</span>
+              <button class="dish-order-btn" data-dish="Passionfruit Berry Mojito" data-price="₹260">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 11: Desserts -->
+        <article class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" 
+              alt="Belgian Chocolate Molten Cake" 
+              class="menu-card-img"
+              loading="lazy"
+            >
+            <span class="menu-card-badge badge-special">⭐ Decadence</span>
+          </div>
+          <div class="menu-card-content">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Belgian Molten Lava Cake</h3>
+              <span class="menu-card-price">₹310</span>
+            </div>
+            <p class="menu-card-desc">
+              Warm 70% Callebaut dark chocolate cake with an erupting molten core, paired with hand-churned Madagascar vanilla bean gelato.
+            </p>
+            <div class="menu-card-footer">
+              <span class="dish-tags">⭐ Warm &amp; Chilled • Sweet</span>
+              <button class="dish-order-btn" data-dish="Belgian Molten Lava Cake" data-price="₹310">
+                <span>Order on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Menu Bottom Action Banner -->
+      <div class="menu-bottom-banner reveal">
+        <div class="menu-banner-info">
+          <h3>Craving something special or dietary customization?</h3>
+          <p>Our executive chefs are delighted to prepare gluten-free, vegan, or custom spice-level dishes upon request.</p>
+        </div>
+        <a href="https://wa.me/919876543210?text=Hello%20Mohit%20Restaurant,%20can%20you%20please%20share%20the%20complete%20PDF%20menu%20and%20chef%20specials?" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+          <span>Request Complete PDF Menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PHOTO GALLERY SECTION (Grid with Lightbox)
+       ========================================================================== -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Visual Storytelling</span>
+        <h2 class="section-title">The Mohit Atmosphere &amp; Table</h2>
+        <p class="section-subtitle">
+          Step into our candlelit sanctuary where artisanal culinary artistry meets serene, soulful cafe aesthetics.
+        </p>
+      </div>
+
+      <!-- Gallery Category Tabs -->
+      <div class="gallery-tabs reveal">
+        <button class="gallery-tab-btn active" data-filter="all">All Moments</button>
+        <button class="gallery-tab-btn" data-filter="ambiance">Dining Ambiance</button>
+        <button class="gallery-tab-btn" data-filter="food">Gourmet Food</button>
+        <button class="gallery-tab-btn" data-filter="cafe">Cafe &amp; Brews</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+        
+        <div class="gallery-item reveal" data-category="ambiance">
+          <img 
+            src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80" 
+            alt="Evening dining ambience and bar seating" 
+            class="gallery-img"
+            loading="lazy"
+          >
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+            <h4 class="gallery-item-title">Candlelit Evening Lounge</h4>
+            <span class="gallery-item-tag">Interior Ambiance</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="food">
+          <img 
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" 
+            alt="Artisanal gourmet feast presentation" 
+            class="gallery-img"
+            loading="lazy"
+          >
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h4 class="gallery-item-title">Master Chef Charcoal Grills</h4>
+            <span class="gallery-item-tag">Signature Cuisine</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="cafe">
+          <img 
+            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80" 
+            alt="Barista pouring delicate latte art" 
+            class="gallery-img"
+            loading="lazy"
+          >
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h4 class="gallery-item-title">Single-Origin Pour-Over &amp; Art</h4>
+            <span class="gallery-item-tag">Handcrafted Cafe</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="ambiance">
+          <img 
+            src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1200&q=80" 
+            alt="Verdant cafe seating corner with lush greenery" 
+            class="gallery-img"
+            loading="lazy"
+          >
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h4 class="gallery-item-title">The Glasshouse Botanical Corner</h4>
+            <span class="gallery-item-tag">Daylight &amp; Flora</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="food">
+          <img 
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80" 
+            alt="Artisan handmade pasta with fresh herbs" 
+            class="gallery-img"
+            loading="lazy"
+          >
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h4 class="gallery-item-title">Hand-Rolled Truffle Tagliatelle</h4>
+            <span class="gallery-item-tag">Continental Kitchen</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-category="cafe">
+          <img 
+            src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=1200&q=80" 
+            alt="Signature smoky botanical cocktail creation" 
+            class="gallery-img"
+            loading="lazy"
+          >
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h4 class="gallery-item-title">Smoked Botanical Mocktail</h4>
+            <span class="gallery-item-tag">Mixology Bar</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true">
+    <div class="lightbox-content-box">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="Zoomed view" class="lightbox-image" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TABLE RESERVATION SECTION (Instant WhatsApp Integration)
+       ========================================================================== -->
+  <section id="reservation" class="section reservation-section">
+    <div class="container">
+      <div class="reservation-box reveal">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">Personalized Experience</span>
+          <h2 class="section-title">Reserve Your Table</h2>
+          <p class="section-subtitle">
+            Whether for an intimate date night, family celebration, or relaxing coffee rendezvous, we prepare every detail to perfection.
+          </p>
+        </div>
+
+        <form id="table-reservation-form" class="reservation-form">
+          <div>
+            <label for="res-name" class="form-label">Full Name *</label>
+            <input type="text" id="res-name" class="form-input" placeholder="e.g. Mohit Sharma" required>
+          </div>
+
+          <div>
+            <label for="res-phone" class="form-label">Phone / WhatsApp *</label>
+            <input type="tel" id="res-phone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+          </div>
+
+          <div>
+            <label for="res-guests" class="form-label">Number of Guests</label>
+            <select id="res-guests" class="form-select">
+              <option value="1">1 Person (Solo Dining / Coffee)</option>
+              <option value="2" selected>2 Persons (Couple / Cozy Table)</option>
+              <option value="3 to 4">3 - 4 Persons (Family / Friends)</option>
+              <option value="5 to 8">5 - 8 Persons (Celebration Gathering)</option>
+              <option value="9+">9+ Persons (Private Dining Lounge)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="res-date" class="form-label">Preferred Date</label>
+            <input type="date" id="res-date" class="form-input" required>
+          </div>
+
+          <div>
+            <label for="res-time" class="form-label">Preferred Time Slot</label>
+            <select id="res-time" class="form-select">
+              <option value="11:30 AM - Morning Brunch">11:30 AM - Morning Brunch</option>
+              <option value="01:30 PM - Afternoon Lunch">01:30 PM - Afternoon Lunch</option>
+              <option value="05:00 PM - Sunset High Tea &amp; Coffee">05:00 PM - Sunset High Tea &amp; Coffee</option>
+              <option value="07:30 PM - Prime Candlelight Dinner" selected>07:30 PM - Prime Candlelight Dinner</option>
+              <option value="09:15 PM - Late Evening Dining">09:15 PM - Late Evening Dining</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="res-seating" class="form-label">Seating Preference</label>
+            <select id="res-seating" class="form-select">
+              <option value="Main Dining Hall" selected>Main Grand Dining Hall</option>
+              <option value="Romantic Candlelight Nook">Romantic Candlelight Nook</option>
+              <option value="Botanical Garden Terrace">Botanical Garden Terrace</option>
+              <option value="Private VIP Lounge">Private VIP Lounge</option>
+            </select>
+          </div>
+
+          <div class="form-group-full">
+            <label for="res-notes" class="form-label">Special Occasion or Dietary Notes (Optional)</label>
+            <textarea id="res-notes" class="form-textarea" rows="2" placeholder="Birthday, anniversary setup, quiet corner, wheelchair access, etc."></textarea>
+          </div>
+
+          <div class="form-group-full reservation-submit-wrap">
+            <div class="reservation-note">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e6b758" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>Instant confirmation via WhatsApp with booking reference.</span>
+            </div>
+
+            <button type="submit" class="btn btn-gold" id="res-submit-btn">
+              <span>Book Table via WhatsApp</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS SECTION
+       ========================================================================== -->
+  <section id="reviews" class="section testimonials-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Loved by Food Lovers</span>
+        <h2 class="section-title">Words From Our Cherished Diners</h2>
+        <p class="section-subtitle">
+          Over 1,800+ five-star reviews celebrating unforgettable birthdays, romantic dinners, and daily morning coffee rituals.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        
+        <!-- Review 1 -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Mohit Restaurant &amp; Cafe is hands down the finest culinary gem in town. The Dal Makhani Royale melts in your mouth, and their Hazelnut Cappuccino rivaled the best cafes in Milan. The ambient warm lighting makes it feel like royalty!"
+          </p>
+          <div class="testimonial-author-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+              alt="Priya Sharma" 
+              class="author-avatar"
+              loading="lazy"
+            >
+            <div class="author-info">
+              <h4>Priya Sharma</h4>
+              <span class="author-badge">Verified Food Critic • Google Review</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Hosted my partner's 30th birthday in the botanical terrace corner. The team arranged bespoke candle decor, seamless WhatsApp booking, and the Butter Chicken with Truffle Naan was legendary. Every guest was blown away."
+          </p>
+          <div class="testimonial-author-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
+              alt="Rohan Kapoor" 
+              class="author-avatar"
+              loading="lazy"
+            >
+            <div class="author-info">
+              <h4>Rohan Kapoor</h4>
+              <span class="author-badge">Regular Diner • Zomato Gold</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "As someone who works remotely, this cafe is pure tranquility during the day and electrifying at night. Sourdough pizza crust was blistered to perfection, and the staff treats you like family from the minute you step in."
+          </p>
+          <div class="testimonial-author-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" 
+              alt="Ananya Verma" 
+              class="author-avatar"
+              loading="lazy"
+            >
+            <div class="author-info">
+              <h4>Ananya Verma</h4>
+              <span class="author-badge">Coffee Connoisseur • TripAdvisor Top 1%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT & INFO SECTION WITH EMBEDDED MAP
+       ========================================================================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get in Touch &amp; Visit Us</span>
+        <h2 class="section-title">We Look Forward to Welcoming You</h2>
+        <p class="section-subtitle">
+          Located prominently in the heritage avenue with dedicated valet parking and serene indoor &amp; terrace dining.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards & Operating Hours -->
+        <div class="contact-info-cards reveal">
+          
+          <!-- Phone Card -->
+          <div class="info-card">
+            <div class="info-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <h4>Call for Inquiries &amp; Takeaway</h4>
+              <p><a href="tel:+919876543210">+91 98765 43210</a> / <a href="tel:+919876543211">+91 98765 43211</a></p>
+              <button class="info-action-btn copy-trigger" data-copy="+919876543210">
+                <span>📋 Copy Phone Number</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- WhatsApp Link Card -->
+          <div class="info-card">
+            <div class="info-icon-box" style="background: rgba(37, 211, 102, 0.12); color: #25D366; border-color: rgba(37, 211, 102, 0.25);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <h4>Direct WhatsApp Concierge</h4>
+              <p>Instant table confirmation, takeaway orders, and private event bookings.</p>
+              <a href="https://wa.me/919876543210?text=Hi%20Mohit%20Restaurant%20%26%20Cafe" target="_blank" rel="noopener noreferrer" class="info-action-btn" style="color: #4ade80;">
+                <span>💬 Chat on WhatsApp (+91 98765 43210) &rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Address Card -->
+          <div class="info-card">
+            <div class="info-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <h4>Exact Restaurant Location</h4>
+              <p id="full-address-text">42, Heritage Boulevard, Royal Commercial Circle, Near Central Park, Connaught Place, New Delhi 110001</p>
+              <button class="info-action-btn copy-trigger" data-copy="42, Heritage Boulevard, Royal Commercial Circle, Near Central Park, Connaught Place, New Delhi 110001">
+                <span>📍 Copy Exact Address</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Socials Card -->
+          <div class="info-card">
+            <div class="info-icon-box" style="background: rgba(225, 48, 108, 0.12); color: #e1306c; border-color: rgba(225, 48, 108, 0.25);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div class="info-card-text">
+              <h4>Follow Our Daily Specials on Instagram</h4>
+              <p>Tag <strong>@mohit.restaurant.cafe</strong> for a complimentary dessert on your anniversary!</p>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="info-action-btn" style="color: #f472b6;">
+                <span>📸 Visit Instagram Profile &rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Operating Hours Styled Table -->
+          <div class="hours-card">
+            <div class="hours-header">
+              <h4>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e6b758" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Operating Hours</span>
+              </h4>
+              <div class="status-badge-nav status-indicator-live">
+                <span class="status-dot"></span>
+                <span>Open Now</span>
+              </div>
+            </div>
+
+            <div class="hours-row">
+              <span class="hours-day">Monday – Thursday</span>
+              <span class="hours-time">10:00 AM – 11:30 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Friday &amp; Saturday (Late Night Cafe)</span>
+              <span class="hours-time">10:00 AM – 12:30 AM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday Special Brunch &amp; Dinner</span>
+              <span class="hours-time">09:30 AM – 11:30 PM</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Embedded Google Maps Placeholder -->
+        <div class="map-wrapper reveal">
+          <iframe 
+            class="map-iframe"
+            title="Mohit Restaurant &amp; Cafe Location Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.283181829633!2d77.21558!3d28.63242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b927057b%3A0x69c02269647279!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-card-badge">
+            <div class="badge-icon" style="color: var(--gold-primary); font-size: 1.5rem;">📍</div>
+            <div class="badge-text">
+              <span style="font-weight: 700; color: #fff; display: block;">Mohit Restaurant &amp; Cafe</span>
+              Valet Parking Available • Heritage Boulevard
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP CHAT BUTTON (Bottom Right)
+       ========================================================================== -->
+  <div class="floating-whatsapp-wrap">
+    <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+    <a 
+      href="https://wa.me/919876543210?text=Hi%20Mohit%20Restaurant%20%26%20Cafe,%20I%20have%20an%20inquiry%20regarding%20table%20reservation%20and%20specials." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="floating-whatsapp-btn"
+      id="floating-whatsapp-trigger"
+      aria-label="Chat with Mohit Restaurant and Cafe on WhatsApp"
+    >
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Tagline -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <div class="brand-text-wrap">
+              <span class="brand-title">MOHIT</span>
+              <span class="brand-tagline">Restaurant &amp; Cafe</span>
+            </div>
+          </div>
+          <p>
+            An extraordinary destination where the passion for artisanal culinary art meets warm, gracious hospitality and relaxing cafe vibes.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Home Banner</a></li>
+            <li><a href="#about" class="footer-link">Our Heritage &amp; Team</a></li>
+            <li><a href="#menu" class="footer-link">Signature Menu</a></li>
+            <li><a href="#gallery" class="footer-link">Photo Gallery</a></li>
+            <li><a href="#reservation" class="footer-link">Book a Table</a></li>
+            <li><a href="#reviews" class="footer-link">Guest Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Dining Hours Snapshot -->
+        <div class="footer-col">
+          <h4>Dining Hours</h4>
+          <ul class="footer-links">
+            <li><span style="color: #fff;">Mon – Thu:</span> 10:00 AM – 11:30 PM</li>
+            <li><span style="color: #fff;">Fri &amp; Sat:</span> 10:00 AM – 12:30 AM</li>
+            <li><span style="color: #fff;">Sunday:</span> 09:30 AM – 11:30 PM</li>
+            <li style="margin-top: 0.5rem; color: #4ade80;">Valet Parking Active</li>
+            <li style="color: var(--gold-light);">Private Dining Available</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: VIP Club Newsletter -->
+        <div class="footer-col">
+          <h4>Mohit VIP Club</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+            Subscribe to receive chef tasting invitations, holiday special menus, and complimentary birthday treats.
+          </p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-gold btn-sm">
+              <span>Join</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mohit Restaurant &amp; Cafe. All Rights Reserved. Crafted for fine culinary connoisseurs.</p>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#about" style="color: var(--text-muted);">Privacy Policy</a>
+          <a href="#contact" style="color: var(--text-muted);">Terms &amp; Reservations</a>
+          <a href="#hero" style="color: var(--gold-primary); font-weight: 600;">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Strictly Relative JS Link as Mandated -->
+  <script src="./script.js"></script>
+</body>
+</html>
